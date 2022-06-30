@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:background="@color/light_grey"
+    android:layout_marginHorizontal="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="0dp"
+        android:background="@color/light_grey">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/backgroundcolor"
+            android:paddingHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="248dp"
+                android:textColor="@color/black"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:text="Parking one"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/title"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:text="Near the schools round-about"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/slots"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/title"
+                android:text="20" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

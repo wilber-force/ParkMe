@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/gradientbackground"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProfileActivity">
+
+
+    <TextView
+        android:id="@+id/dbidno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:text="Id number: "
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/dbfname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:text="First name: "
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/dbsurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:text="Surname "
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:id="@+id/linearLayout">
+    <TextView
+        android:id="@+id/dbphoneno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:text="Phone Number: "
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/dbemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:text="Email address"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change details"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/dbeditdetails"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:textColor="@color/black"
+            android:backgroundTint="#F0F0F0"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/dbexit"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/hiddenLinearLayout"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:ems="10"
+            android:id="@+id/userdbphoneno"
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email address"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="24sp"
+            android:ems="10"
+            android:id="@+id/userdbemail"
+            android:inputType="textEmailAddress"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save changes"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/dbsavedetails"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exit"
+                android:textColor="@color/black"
+                android:backgroundTint="#F0F0F0"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/dbcancel"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

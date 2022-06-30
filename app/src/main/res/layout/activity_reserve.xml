@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/gradientbackground"
+    android:layout_height="match_parent"
+    tools:context=".ReserveActivity">
+
+    <EditText
+        android:id="@+id/vehiclenoplate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vehicle Number Plate"
+        android:inputType="text|number"
+        android:textAlignment="center"
+        android:textSize="26dp"/>
+    <EditText
+        android:id="@+id/driverid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm your ID Number"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="26dp"/>
+    <EditText
+        android:id="@+id/drivernumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm your phone Number"
+        android:inputType="number|phone"
+        android:textAlignment="center"
+        android:textSize="26dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please specify the date and time"
+        android:textSize="24sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/in_date"
+            android:layout_width="220dp"
+            android:hint="Select the date"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:inputType="date" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECT DATE"
+                android:id="@+id/btn_date"
+                android:layout_toRightOf="@+id/in_date"
+                android:layout_toEndOf="@+id/in_date" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:hint="Select the time"
+                android:id="@+id/in_time"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECT TIME"
+                android:id="@+id/btn_time"
+                android:layout_toRightOf="@+id/in_time"
+                android:layout_toEndOf="@+id/in_time"/>
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/reserveScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:backgroundTint="@color/purple_500"
+            android:layout_margin="10dp"
+            android:textAlignment="center"/>
+        <Button
+            android:id="@+id/reserve_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            android:backgroundTint="#F0F0F0"
+            android:layout_margin="10dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+</LinearLayout>
